@@ -25,20 +25,20 @@ ball_mount() {
 
   translate(-[0, 0, 15.05+8.47])
   multmatrix($inverse_pivot_transform)
-  table_hook([-26, 0, 0], $render_accessories=true);
+  table_hook([-26, 0, 0], $render_accessories=false);
 
   multmatrix(keyboard_offset) {
     assembled_plate($detail=true);
     accessories(
-      $render_controller=true,
-      $render_leds=true,
-      $render_switches=true,
-      $render_keycaps=true,
-      $render_trrs=true,
+      $render_controller=false,
+      $render_leds=false,
+      $render_switches=false,
+      $render_keycaps=false,
+      $render_trrs=false,
       $key_pressed=false
     );
 
-    for (i=[0:2]) post_place(i) {
+    for (i=[0:4]) post_place(i) {
       m3_screw();
       translate([0, 0, -7]) m3_hex_nut();
     }

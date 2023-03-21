@@ -39,10 +39,10 @@ thumb_column_radius = mount_width / 2 / sin(beta/2) + cap_top_height;
 // Per-column offsets for finger keys.
 finger_column_offset_index = [0, 0, 0];
 finger_column_offset_index_stretch = [0, 0, 0];
-finger_column_offset_middle = [0, 2.82, -3.0]; // was moved -4.5
+finger_column_offset_middle = [0, 3, -2.5]; // was moved -4.5
 finger_column_offset_ring = [0, 0, 0];
-finger_column_offset_pinky = [0, -8, 5.64];
-finger_column_offset_pinky_stretch = [0, -8, 5.64];
+finger_column_offset_pinky = [0, -3, 4.5];
+finger_column_offset_pinky_stretch = [0, -4, 6];
 finger_column_offsets = [
   finger_column_offset_index_stretch,
   finger_column_offset_index,
@@ -55,12 +55,12 @@ finger_column_offsets = [
 // Per-column selection of keys an their row positions.
 // Values here don't need to be integers but they probably should be.
 finger_columns = [
-  [1, 2, 3],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3, 4],
-  [1, 2, 3],
-  [1, 2, 3]
+  [0, 1, 2, 3],
+  [0, 1, 2, 3, 4],
+  [0, 1, 2, 3, 4],
+  [0, 1, 2, 3, 4],
+  [0, 1, 2, 3, 4],
+  [0, 1, 2, 3, 4]
 ];
 
 finger_overrides = [
@@ -97,10 +97,11 @@ led_size = 0.52;
 
 // LED positioning is given with [col, row] pairs.
 leds = [
-  [-0.75, 0.82],
-  [-0.75, 1.2],
-  [-0.75, 1.58],
-  [-0.75, 1.96]
+  [-0.75, -0.2],
+  [-0.75, 0.5],
+  [-0.75, 1.75],
+  [-0.75, 2],
+  [-0.75, 2.5]
 ];
 
 // how thick to make the arm/clamp.

@@ -55,40 +55,40 @@ module perimeter() {
   // perimeter of thumb and finger cluster without backplate and led column)
   serial_hulls(close=false) {
     // top left corner
-    finger_corner_nw(0, 1) edge_profile(90);
-    finger_corner_ne(0, 1) edge_profile(90);
+    finger_corner_nw(0, 0) edge_profile(90);
+    finger_corner_ne(0, 0) edge_profile(90);
 
     // top edge
-    finger_corner_nw(1, 1) edge_profile(90);
-    finger_edge_n(1, 1) edge_profile(90);
-    finger_corner_ne(1, 1) edge_profile(45, stretch=true);
-    finger_corner_nw(2, 1) edge_profile(60);
-    finger_corner_ne(2, 1) edge_profile(120);
-    finger_corner_nw(3, 1) edge_profile(110);
-    finger_corner_ne(3, 1) edge_profile(120);
-    finger_corner_nw(4, 1) edge_profile(135, stretch=true);
-    finger_corner_ne(4, 1) edge_profile(90);
-    finger_corner_nw(5, 1) edge_profile(90);
+    finger_corner_nw(1, 0) edge_profile(90);
+    finger_edge_n(1, 0) edge_profile(90);
+    finger_corner_ne(1, 0) edge_profile(45, stretch=true);
+    finger_corner_nw(2, 0) edge_profile(60);
+    finger_corner_ne(2, 0) edge_profile(120);
+    finger_corner_nw(3, 0) edge_profile(110);
+    finger_corner_ne(3, 0) edge_profile(120);
+    finger_corner_nw(4, 0) edge_profile(135, stretch=true);
+    finger_corner_ne(4, 0) edge_profile(90);
+    finger_corner_nw(5, 0) edge_profile(90);
 
     // top right corner
-    finger_corner_ne(5, 1) edge_profile(110);
-    finger_corner_ne(5, 1) edge_profile(140);
+    finger_corner_ne(5, 0) edge_profile(110);
+    finger_corner_ne(5, 0) edge_profile(140);
 
     // right edge
-    finger_corner_se(5, 1) edge_profile(180);
+    finger_corner_se(5, 0) edge_profile(180);
     finger_corner_ne(5, 2) edge_profile(180);
     finger_corner_se(5, 2) edge_profile(180);
-    finger_corner_ne(5, 3) edge_profile(180);
-    finger_corner_se(5, 3) edge_profile(180);
+    finger_corner_ne(5, 4) edge_profile(180);
+    finger_corner_se(5, 4) edge_profile(180);
 
     // bottom right corner
-    finger_corner_se(5, 3) edge_profile(210);
-    finger_corner_se(5, 3) edge_profile(240);
+    finger_corner_se(5, 4) edge_profile(210);
+    finger_corner_se(5, 4) edge_profile(240);
 
     // bottom edge
-    finger_corner_sw(5, 3) edge_profile(270);
-    finger_corner_se(4, 3) edge_profile(270);
-    finger_corner_sw(4, 3) edge_profile(270-45, stretch=true);
+    finger_corner_sw(5, 4) edge_profile(270);
+    finger_corner_se(4, 4) edge_profile(270);
+    finger_corner_sw(4, 4) edge_profile(270-45, stretch=true);
     finger_corner_se(3, 4) edge_profile(220);
     finger_corner_se(3, 4) edge_profile(270);
     finger_corner_sw(3, 4) edge_profile(270);
@@ -184,7 +184,7 @@ module perimeter() {
     led_corner_nw(0) edge_profile(60);
     led_corner_nw(0) edge_profile(90);
     led_corner_ne(0) rotate([0, 30, 0]) edge_profile(90);
-    finger_corner_nw(0, 1) edge_profile(90);
+    finger_corner_nw(0, 0) edge_profile(90);
   }
 }
 
